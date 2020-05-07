@@ -1,57 +1,70 @@
-    *{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-transform: uppercase; 
-        margin: 0;
-        padding: 0;
-    }
+*{
+    padding: 0;
+    margin: 0;
+}
 
-    .container{
-        position: fixed;
-        top: 20px;
-        width: 100%;
-        background-color: grey;
-    }
+body{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase; 
+}
 
-    .container ul{
-        list-style: none;
-    }
-    .container .firstNav{
-        background-color: grey;
-        display: flex;
-    }
+.container{
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+}
 
-    .container .firstNav li{
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        font-size: 19px;
-        position: relative;
-    }
+.container ul{
+    list-style-type: none;
+}
 
-    .container ul ul{
-        display: none;
-    }
+.container li{
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    font-size: 19px;
+}
 
-    .container ul li a:hover{
-        background-color: white;
-        color: gray;
-    }
+a{
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    display: block;
+}
 
-    .container ul li:hover > ul{
-        display: flex;
-        flex-direction: column;
-    }
+.active{
+    color: black;
+}
 
-    .container ul ul ul{
-        right: -100%;
-        top: 0px;
-        position: absolute;
-    }
+.container .firstNav{
+    display: flex;
+}
 
-    a{
-        text-decoration: none;
-        background-color: grey;
-        color: white;
-        display: block;
-    }
+.container .firstNav .secondNav{
+    display:none;
+}
+
+.container .firstNav .secondNav .thirdNav{
+    display: none;
+    right: -100%;
+    top: 0px;
+    position: absolute;
+}
+
+.container .firstNav li a:hover{
+    background-color: white;
+    color: grey;
+}
+
+.container .firstNav li:hover > .secondNav{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .firstNav .secondNav li:hover > .thirdNav{
+    display: flex;
+    flex-direction: column;
+}
