@@ -51,7 +51,7 @@ a{
 .thirdNav{
     display: none;
     position: absolute;
-    transform: translate(100%, -34%); 
+    transform: translate(100%, -33.4%); 
 }
 
 .firstNav li a:hover{
