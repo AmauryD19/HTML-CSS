@@ -1,0 +1,16 @@
+@font-face{
+    font-family: "Oswald";
+    src: url("./font/Oswald.ttf");
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    height: 300vh;
+    width: 100%;
+    background-image: url('bg.jpg');
+    font-size: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} 
