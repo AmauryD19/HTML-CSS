@@ -1,0 +1,8 @@
+div{
+    background-color: fuchsia;
+    width: 270px;
+    height: 270px;
+    /*margin: 270px 27px;*/ /*Verticale horizontale*/
+    margin : 0 auto; /*Technique pou centrer*/
+    padding: 27px 27px 27px 27px; /*Haut droite bas gauche*/
+}
