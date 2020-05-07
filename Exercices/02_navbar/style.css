@@ -50,9 +50,8 @@ a{
 
 .thirdNav{
     display: none;
-    right: -100%;
-    top: 0px;
     position: absolute;
+    transform: translate(100%, -34%); 
 }
 
 .firstNav li a:hover{
