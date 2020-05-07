@@ -15,11 +15,11 @@ body{
     background-color: grey;
 }
 
-.container ul{
+ul{
     list-style-type: none;
 }
 
-.container li{
+li{
     width: 200px;
     height: 100%;
     text-align: center;
@@ -39,32 +39,32 @@ a{
     color: black;
 }
 
-.container .firstNav{
+.firstNav{
     display: flex;
 }
 
-.container .firstNav .secondNav{
+.secondNav{
     display:none;
 }
 
-.container .firstNav .secondNav .thirdNav{
+.thirdNav{
     display: none;
     right: -100%;
     top: 0px;
     position: absolute;
 }
 
-.container .firstNav li a:hover{
+.firstNav li a:hover{
     background-color: white;
     color: grey;
 }
 
-.container .firstNav li:hover > .secondNav{
+.firstNav li:hover > .secondNav{
     display: flex;
     flex-direction: column;
 }
 
-.container .firstNav .secondNav li:hover > .thirdNav{
+.secondNav li:hover > .thirdNav{
     display: flex;
     flex-direction: column;
 }
