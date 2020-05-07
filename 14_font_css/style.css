@@ -1,0 +1,8 @@
+@font-face{
+    font-family: "Oswald";
+    src: url("./font/Oswald.ttf");
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+} 
