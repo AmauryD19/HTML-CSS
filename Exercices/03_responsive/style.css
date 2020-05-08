@@ -103,7 +103,7 @@ footer{
         position: absolute;
         left: 30%;
         top: 30%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         z-index: 3;
         border-radius: 50%;
         height: 80px;
