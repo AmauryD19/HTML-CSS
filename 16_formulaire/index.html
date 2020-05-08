@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>16. Formulaire</title>
+</head>
+<body>
+    <form action="javascript: void(0)" method="post">
+    <!--GET = limité par le nombre de données et elle est moins sécurisante.-->
+    <!--POST = adapté pour les formulaires de connexion et d'inscription-->
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="name" placeholder="Veuillez rajoutez votre nom" id="nom">
+        </div>
+        <div>
+            <label for="test">TEST:</label>
+            <input type="number" name="number" id="number">
+            <input type="color" name="color" id="color">
+            <input type="time" name="time" id="time">
+            <input type="date" name="date" id="date">
+            <input type="email" name="email" id="email">
+            <input type="file" multiple accept="image/png, image/jpeg" name="file" id="file">
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="chien">CHIENS</label>
+            <input type="checkbox" name="chien" id="chien">
+            <label for="chat">CHAT</label>
+            <input type="checkbox" name="chat" id="chat">
+        </div>
+        <div>
+            <h1>Ton artiste favori</h1>
+            <input type="radio" name="artiste" id="maes">
+            <label for="maes">Maes</label>
+
+            <input type="radio" checked name="artiste" id="doigby">
+            <label for="doigby">Doigby</label>
+
+            <input type="radio" name="artiste" id="travis">
+            <label for="travis">Travis Scott</label>
+        </div>
+        <div>
+            <label for="text">MES REMARQUES POUR LE COURS DE SEBASTIEN:</label>
+            <textarea 
+                name="text"
+                id="text"
+                cols="30"
+                rows="10"
+            >LE MEILLEUR OE OE OE</textarea>
+        </div>
+        <div>
+            <h1>CHOOSE YOUR COLOR</h1>
+            <select name="color" id="color">
+                <option value="default" selected disabled>Select one color</option>
+                <option value="red">rouge</option>
+                <option value="green">vert</option>
+                <optgroup label="Bleu">Bleu
+                    <option value="cyan">cyan</option>
+                    <option value="bluesky">bleu ciel</option>
+                </optgroup>
+                    
+            </select>
+        </div>
+        <button type="reset">RESET</button>
+        <button type="submit">ENVOIE ENVOIE</button>
+    </form>
+</body>
+</html>
