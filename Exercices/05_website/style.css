@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap%27');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 445px 150px 200px 150px 350px 100px;
+    grid-template-areas: "bgimg" "video" "testimonials" "second-section" "rec-posts" "posts" "footer";
+}
+
+.bgImg {
+    height: 1170px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 43%, rgba(255, 255, 255, 0.008448879551820738) 50%), url('img/billboard.jpg') no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 485px 385px;
+    gap: 1px 1px;
+    grid-template-areas: "nav" "header" "firstsection";
+    grid-area: bgimg;
+}
+
+.firstSection {
+    grid-area: firstsection;
+}
+
+.firstSection>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.firstSectionList>li {
+    width: 20%;
+}
+
+.firstSectionList>li>h2 {
+    color: gray;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav>img {
+    padding: 30px;
+    height: 26px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    color: white;
+    padding: 25px;
+}
+
+header {
+    grid-area: header;
+    color: white;
+}
+
+header>h1 {
+    font-size: 3rem;
+}
+
+header>hr {
+    margin-top: 40px;
+    width: 30px;
+}
+
+.video {
+    background-image: url("img/video.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    grid-area: video;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.video>img {
+    padding-top: 100px;
+}
+
+.testimonials {
+    margin-top: 25px;
+    height: 100%;
+    color: #2d2d2d;
+    grid-area: testimonials;
+}
+
+.testimonials>h2 {
+    font-size: 2rem;
+}
+
+.secondSection {
+    grid-area: second-section;
+}
+
+.secondSection>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.quotesImg {
+    float: left;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 70px;
+}
+
+.quotesNames {
+    font-weight: bold;
+    color: gray;
+}
+
+.secondSection>ul>li {
+    width: 15%;
+}
+
+.recentPosts {
+    grid-area: rec-posts;
+    background-color: #dddddd;
+    color: gray;
+}
+
+.posts {
+    grid-area: posts;
+    background-color: #dddddd;
+}
+
+.posts>ul {
+    margin: 0 auto;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.posts>ul>li {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerBlog {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.dateBlog {
+    position: absolute;
+    font-size: 20px;
+    top: 0px;
+    left: 24px;
+    background-color: rgba(128, 128, 128, 0.753);
+    display: block;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(190, 184, 184);
+}
+
+footer > ul{
+    display:flex;
+}
+footer > ul > li{
+    padding-left: 25px;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
